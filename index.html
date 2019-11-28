@@ -1,1 +1,189 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<head>
+	<title>Jacob Makarsky</title>
+	<link href="resources/css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/Users/jacobmakarsky/Desktop/CAREER/WEBSITES/makarsky.dev/newsite/resources/javascript/script.js"></script>
+</head>
+<body>
+		<!--HERO IMAGE SECTION-->
+		<section class="hero">
+			<div class="hero-inner">
+				<h3>Entrepreneur, Software Developer & Designer - PSU 2020</h3>
+				<h1>Jacob Makarsky</h1>
+				<h2 id="helloText"></h2>
+				<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fa fa-linkedin-square" style="font-size: 1.8em"></i></a>
+			</div>
+		</section>
+
+		<main>
+			<!--TAB SECTION UNDER HERO IMAGE-->
+			<div class="wrapper">
+			  <nav class="tabs">
+			    <div class="selector"></div>
+				    <a href="#aboutMeAnchor"><i class="fab fa-superpowers"></i>About Me</a>
+				    <a href="#experienceAnchor"><i class="fas fa-hand-rock"></i>Experience</a>
+				    <a href="#contactMeAnchor"><i class="fas fa-bolt"></i>Contact Me</a>
+			  </nav>
+			</div>
+
+		<!--ABOUT ME-->
+			<div class="row">
+				<div class="col">
+					<div class="aboutMe" id="aboutMeAnchor">
+						<h2>About Me</h2>
+						<img src = "../newsite/resources/images/jacob.jpg" alt="me">
+						<div class="aboutMeHeader1">
+							<h3>
+								I am searching for a Full-Time opportunity beginning around May 2020!
+							</h3>
+						</div>
+						<div class="aboutMeHeader2">
+							<h3>
+								Programming and leadership are passions of mine, whether it’s learning a completely new language or working with a team to see ideas become results. Using my imagination in my programming and succeeding with others keeps me motivated, and the challenge of constantly needing to overcome obstacles when attempting to achieve the end goal makes me love doing it all.
+							</h3>
+						</div>
+						<div class="line"></div>
+						<div class="buttons">
+							<button class="button" onclick = "window.open('mailto:jacobmakarsky@gmail.com','_blank')">Contact Me</button>
+							<button class="button" onclick = "window.open('https://drive.google.com/open?id=1xCyzUEKQwc1szRtpvuqmWXRERV_hak0F','_blank')">Resume</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!--EXPERIENCE-->
+			<div class="experience" id="experienceAnchor">
+				<h2>Experience</h2>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/aruslabs.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>Sept 2019 - Present</h4>
+						<h3>Software Engineer - Arus Labs LLC | Pittsburgh, PA</h3>
+						<p>Design & Develop iOS applications using Swift, Xcode and Adobe XD</p>
+						<button class="button" onclick = "window.open('https://www.linkedin.com/company/arus-labs?trk=public_profile_topcard_current_company','_blank')">See More</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/innoblue.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>Apr 2019 - Present</h4>
+						<h3>Vice President - Innoblue | State College, PA</h3>
+						<p>Help lead the organization's direction, events, influence and connections.</p>
+						<button class="button" onclick = "window.open('http://www.innoblue.org','_blank')">See More</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/workshop1.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>Nov 2019</h4>
+						<h3>Speaker - HackPSU | State College, PA</h3>
+						<p>Hosted a workshop called "Introduction to Blockchain Development" with around 30+ attendees. Spoke about enough basics of blockchain for one to begin development, and then gave a basic tutorial on coding an Ethereum smart contract using Remix IDE.</p>
+						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1XOUUYmi6xkU3t2ubHO7PCBFS52xDuHx_','_blank')">See More</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/nittanyai.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>Nov 2019</h4>
+						<h3>Nittany AI Challenge 3rd Place Winner - HackPSU | State College, PA</h3>
+						<p>Won on a team by myself. 26 teams of up to 5 people each participated. Developed a Java application that scraped social media photos, used Google Cloud Vision AI to scan the photos, and returned JSON data back to the application. (https://devpost.com/software/disaster-relief-recovery-application-drra)</p>
+						<button class="button" onclick = "window.open('https://devpost.com/software/disaster-relief-recovery-application-drra','_blank')">See More</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/forbes.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>Oct 2019</h4>
+						<h3>Forbes Under 30 Scholar & Farrell Center Scholar | Detroit, Michigan</h3>
+						<p>Recieved a scholarship from Forbes to attend the Forbes Under 30 Summit in Detroit and a scholarship from the Farrell Center for Corporate Innovation and Entrepreneurship at Penn State.</p>
+						<button class="button" onclick = "window.open('https://live.forbes.com/under30','_blank')">See More</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/loopring.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>May 2019 - Jul 2019</h4>
+						<h3>Blockchain Software Engineering Intern - Loopring | Shanghai, China</h3>
+						<p>Created a smart contract for coin swapping between the NEO blockchain (LRN) and the TRON blockchain (LRT) on an intern team of 2 using Solidity & Javascript, creating startup using blockchain technology and Loopring protocol, design some event posters and social media images</p>
+						<button class="button" onclick = "window.open('https://www.loopring.org','_blank')">See More</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/workshop2.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>Mar 2019</h4>
+						<h3>Speaker - HackPSU | State College, PA</h3>
+						<p>Hosted a workshop called "Introduction to iOS App Development" with around 50+ attendees. Showed a quick tutorial on moving assets from Adobe XD to Xcode, and then went through basic steps to make an iOS application with multiple pages and scrolling functionality.</p>
+						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1J5C80MSOqgXxqCgsBmMd6B31x8orahGj','_blank')">See More</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/arbys.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>Sep 2014 - May 2017</h4>
+						<h3>Team Member - Sheetz, Arby's, Pizza Hut | Irwin, PA</h3>
+						<p>Worked at several fast food places and learned how to pretend everything is okay.</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="container">
+						<img src="../newsite/resources/images/ctelearning.jpg" alt="me">
+					</div>
+					<div class="container">
+						<h4>Mar 2016 - May 2016</h4>
+						<h3>App Designer - CTe Learning Inc. | Greensburg, PA</h3>
+						<p>I was employed by Cte Learning Incorporated; it was a paid internship where I designed an application for Big Time Grain Company. I regularly pitched the project status of the application through video chat, received feedback and made changes.</p>
+						<button class="button" onclick = "window.open('https://www.ctelearning.com/pennsylvania-high-school-business-student-gets-paid-internship-coding-and-mobile-app-design-course/','_blank')">See More</button>
+					</div>
+				</div>
+			</div>
+
+			<!--CONTACT ME-->
+			<div class="row">
+				<div class="col">
+					<div class="contactMe" id="contactMeAnchor">
+						<h2>Contact Me</h2>
+						<button class="button" onclick = "window.open('mailto:jacobmakarsky@gmail.com','_blank')">Email Me</button>
+						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1xCyzUEKQwc1szRtpvuqmWXRERV_hak0F','_blank')">Resume</button>
+						<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fa fa-linkedin-square" style="font-size: 1.8em"></i></a>
+						<h3>jacobmakarsky@gmail.com</h3>
+					</div>
+				</div>
+			</div>
+
+			<!--FOOTER-->
+			<div class="row">
+				<div class="col">
+					<div class="footer">
+					  <p>Copyright © Jacob Makarsky</p>
+					</footer>
+				</div>
+			</div>
+
+		</main>
+</body>
+</html>
