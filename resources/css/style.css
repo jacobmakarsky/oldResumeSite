@@ -51,7 +51,9 @@ p
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+  
+    /*really weird zoom in issue on iphone and ipad fixed with this*/
+    background-attachment: scroll;
 }
 
 .hero h1 
@@ -301,6 +303,9 @@ p
 
 		/* Text styles */
 		text-align: left;
+
+    /*change background style back to normal on computers*/
+    background-attachment: fixed;
 	}
 	.hero h1,h2,h3,h4,a
 	{
