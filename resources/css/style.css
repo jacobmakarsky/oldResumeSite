@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, html * 
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+ 	font-family: 'Roboto';
+}
+
+p
+{
+  line-height: 1.5;
+}
+
+/******* COLUMN AND ROW STYLING *******/
+.row:before, .row:after
+{
+  content: "";
+  display: table;
+}
+.row:after
+{
+  clear: both;
+}
+
+/************ STYLING FOR HERO IMAGE ************/
+.hero 
+{
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/me.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 
+{
+  /* Text styles */
+  font-size: 3em;
+    
+  /* Margins */
+  margin-top: 0;
+}
+
+.hero h2
+{
+	margin-bottom: 4%;
+	margin-top: 4%;
+}
+
+.hero h3
+{
+	margin-bottom: 3%;
+}
+
+.fa
+{
+	margin-top: 3%;
+	color: white;
+}
+
+/************* TAB BAR UNDER HERO *************/
+.wrapper
+{
+  	text-align: center;
+  	margin: 1% auto;
+}
+.tabs
+{
+  margin-top: 3%;
+  font-size: 1em;
+  padding: 0px;
+  list-style: none;
+  background: #fff;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+}
+.tabs a
+{
+  text-decoration: none;
+  color: #777;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition-duration: 0.6s;
+}
+.tabs a.active
+{
+  color:#fff;
+}
+.tabs a i
+{
+  margin-right: 5px;
+}
+.tabs .selector
+{
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  border-radius: 50px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  background: #05abe0;
+  background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+  background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+}
+
+/************* ABOUT ME SECTION *************/
+.aboutMe
+{
+  color: #000000;
+  padding: 30px 20px 60px;
+  text-align: center;
+  background-color: #F5F5F5;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 3%;
+}
+.aboutMe img
+{
+  width: 100%;
+  margin-top: 3%;
+  object-fit: cover;
+}
+.aboutMe h3
+{
+  font-weight: 300;
+  margin-top: 5%;
+  text-align: left;
+}
+.line
+{
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.button
+{
+  display: inline-block;
+  border-radius: 48px;
+  background-color: #223E6A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  padding: 15px;
+  width: 38%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: right;
+}
+.button:last-of-type /*make the resume button red*/
+{
+  background-color: #650D11;
+}
+.buttons
+{
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/************* EXPERIENCE SECTION *************/
+.experience
+{
+  text-align: center;
+  margin-top: 5%;
+}
+.cards 
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 2%;
+}
+.card
+{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  padding: 1rem;
+  height: 100%;
+  margin-top: 5%;
+  color: #000000;
+}
+.container img
+{
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  max-height:100%;
+}
+.card .container h3, h4, p
+{
+  margin-top: 2%;
+}
+.card .button
+{
+  background-color: #535150;
+}
+
+/************* CONTACT ME SECTION *************/
+.contactMe
+{
+  color: #000000;
+  padding: 30px 20px 60px;
+  text-align: center;
+  background-color: #F5F5F5;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 5%;
+}
+.contactMe .button
+{
+  float: none;
+  margin-top: 5%;
+}
+.contactMe .fa
+{
+  display: table;
+  margin: 0 auto;
+  color: #000000;
+  margin-top: 5%;
+}
+.contactMe h3
+{
+  margin-top: 5%;
+}
+
+/************* FOOTER *************/
+.footer 
+{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #000000;
+   text-align: center;
+   margin-top: 5%;
+}
+
+/************* TABLET VIEW *************/
+@media (min-width: 768px)
+{
+  .cards 
+  { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/************* DESKTOP VIEW *************/
+@media (min-width: 1024px)
+{
+	/******* STYLING FOR HERO IMAGE *******/
+	.hero
+	{
+		/* Flexbox stuff */
+		display: inline-table;
+		justify-content: left;
+		align-items: left;
+
+		/* Text styles */
+		text-align: left;
+	}
+	.hero h1,h2,h3,h4,a
+	{
+		margin-left: 8%;
+	}
+	.hero h1
+	{
+		margin-top: 3%;
+	}
+	.hero h2
+	{
+		margin-bottom: 2%;
+	}
+  .hero h3
+  {
+    margin-top: 20%;
+  }
+  .hero-inner h3
+  {
+    margin-left: 8%;
+  }
+
+  /******* STYLING FOR TAB BAR *******/
+  .tabs
+  {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3%;
+    font-size: 1.3rem;
+  }
+  .tabs .selector
+  {
+    margin-left: 8%;
+  }
+
+  /****** ABOUT ME SECTION ******/
+  .aboutMe
+  {
+    /* reset some settings and make it like a hero image */
+    padding: 0px 0px 0px 0px;
+    box-shadow: none;
+    background-color: #FFFFFF;
+    margin-top: 3%;
+
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: right;
+    color: white;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/jacob.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .aboutMe h1 
+  {
+    /* Text styles */
+    font-size: 3em;
+      
+    /* Margins */
+    margin-top: 0;
+  }
+  .aboutMe h2 /*about me header*/
+  {
+    font-size: 3em;
+    position: absolute;
+    left: 0px;
+    padding-bottom: 40%;
+    font-weight: 300;
+  }
+  .aboutMeHeader1 /*subheader for job searching*/
+  {
+    display: block;
+    position: absolute;
+    padding-bottom: 25%;
+    text-align: right;
+    width: 50%;
+    right: 5%;
+    font-size: 1.5rem;
+  }
+  .aboutMeHeader2 /*about me description*/
+  {
+    display: block;
+    position: absolute;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    width: 50%;
+    right: 0%;
+    font-size: 1.2rem;
+  }
+  .aboutMe .line /*don't need it on large screen*/
+  {
+    display: none;
+  }
+  .aboutMe img /*filled the div up instead on large screen*/
+  {
+    display: none;
+  }
+  .button
+  {
+    width: 100%;
+  }
+  .buttons
+  {
+    display: block;
+    position: absolute;
+    margin-right: 5%;
+    right: 0%;
+    padding-top: 20%;
+  }
+
+  /****** EXPERIENCE SECTION ******/
+  .experience h2
+  {
+    text-align: left;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  .cards 
+  { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .card .container h3, h4, p
+  {
+    margin-left: 0%;
+  }
+  .card .button
+  {
+    width: 50%;
+  }
+
+  /****** CONTACT ME SECTION ******/
+  .contactMe
+  {
+    width: 50%;
+    text-align: center;
+  }
+  .contactMe h2, h3
+  {
+    margin-left: 0;
+  }
+  .contactMe .button
+  {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3%;
+  }
+  .contactMe .fa
+  {
+    margin-top: 2%;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
