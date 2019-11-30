@@ -6,7 +6,11 @@
 	<link href="resources/css/style.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Font awesome -->
+	<script src="https://kit.fontawesome.com/99de799209.js" crossorigin="anonymous"></script>
+
+	<!-- Javascript imports-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="./resources/javascript/script.js"></script>
 </head>
@@ -16,8 +20,11 @@
 			<div class="hero-inner">
 				<h3>Entrepreneur, Software Developer & Designer - PSU 2020</h3>
 				<h1>Jacob Makarsky</h1>
+
+				<!-- js function to handle fading/changing text-->
 				<h2 id="helloText"></h2>
-				<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fa fa-linkedin-square" style="font-size: 1.8em"></i></a>
+
+				<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em"></i></a>
 			</div>
 		</section>
 
@@ -26,9 +33,9 @@
 			<div class="wrapper">
 			  <nav class="tabs">
 			    <div class="selector"></div>
-				    <a href="#aboutMeAnchor"><i class="fab fa-superpowers"></i>About Me</a>
-				    <a href="#experienceAnchor"><i class="fas fa-hand-rock"></i>Experience</a>
-				    <a href="#contactMeAnchor"><i class="fas fa-bolt"></i>Contact Me</a>
+				    <a href="#aboutMeAnchor"><i class="fas fa-user-tie"></i>About Me</a>
+				    <a href="#experienceAnchor"><i class="fas fa-laptop-code"></i>Experience</a>
+				    <a href="#contactMeAnchor"><i class="far fa-address-card"></i>Contact Me</a>
 			  </nav>
 			</div>
 
@@ -36,7 +43,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="aboutMe" id="aboutMeAnchor">
-						<h2>About Me</h2>
+						<h2><i class="fas fa-user-tie"></i> About Me</h2>
 						<img src = "./resources/images/jacob.jpg" alt="me">
 						<div class="aboutMeHeader1">
 							<h3>
@@ -59,7 +66,7 @@
 
 		<!--EXPERIENCE-->
 			<div class="experience" id="experienceAnchor">
-				<h2>Experience</h2>
+				<h2><i class="fas fa-laptop-code"></i> Experience</h2>
 			</div>
 			<div class="cards">
 				<div class="card">
@@ -166,10 +173,10 @@
 			<div class="row">
 				<div class="col">
 					<div class="contactMe" id="contactMeAnchor">
-						<h2>Contact Me</h2>
+						<h2><i class="far fa-address-card"></i> Contact Me</h2>
 						<button class="button" onclick = "window.open('mailto:jacobmakarsky@gmail.com','_blank')">Email Me</button>
 						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1xCyzUEKQwc1szRtpvuqmWXRERV_hak0F','_blank')">Resume</button>
-						<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fa fa-linkedin-square" style="font-size: 1.8em"></i></a>
+						<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em";></i></a>
 						<h3>jacobmakarsky@gmail.com</h3>
 					</div>
 				</div>

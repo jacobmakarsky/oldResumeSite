@@ -8,6 +8,10 @@ html, html *
 	box-sizing: border-box;
  	font-family: 'Roboto';
 }
+body
+{
+  margin: 0;
+}
 
 p
 {
@@ -28,9 +32,10 @@ p
 /************ STYLING FOR HERO IMAGE ************/
 .hero 
 {
-    /* Sizing */
+    /* Sizing, had to do some js tricks because phone browsers were zooming in on the image */
     width: 100vw;
     height: 100vh;
+
     
     /* Flexbox stuff */
     display: flex;
@@ -69,7 +74,7 @@ p
 	margin-bottom: 3%;
 }
 
-.fa
+.fab
 {
 	margin-top: 3%;
 	color: white;
@@ -247,12 +252,16 @@ p
   float: none;
   margin-top: 5%;
 }
-.contactMe .fa
+.contactMe .fab
 {
-  display: table;
+  display: block;
   margin: 0 auto;
   color: #000000;
   margin-top: 5%;
+}
+.contactMe a /*issue with underline not going away on linked button corrected here*/
+{
+  text-decoration: none;
 }
 .contactMe h3
 {
@@ -355,6 +364,11 @@ p
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+  .aboutMe img
+  {
+    width: 100vw;
+    height: 100vh;
   }
   .aboutMe h1 
   {
