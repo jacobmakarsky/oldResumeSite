@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: makarsky.dev
+Token: 3ab4dd43ed41f4e3380bb7bbe4cf3977574c73ba2d0c684f0c909ceabeea4c79
