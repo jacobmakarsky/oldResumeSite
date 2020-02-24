@@ -237,6 +237,7 @@ a
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
   margin-top: 5%;
   background-color: #EDEDED;
+  display: block;
 }
 .contactMe .button
 {
@@ -264,7 +265,6 @@ a
   margin-top: 5%;
   background-color: #EDEDED;
   color: #000000;
-  text-align: center;
 }
 .contactMe h2
 {
