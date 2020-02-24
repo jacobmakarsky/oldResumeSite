@@ -83,20 +83,18 @@ a
 .portrait
 {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 30vw;
+  height: 30vw;
   overflow: hidden;
   border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .portrait img
 {
-  width: auto;
+  width: 100%;
   height: 100%;
-  margin-left: -35px;
+  object-fit: cover;
 }
 
 .column-left
@@ -266,6 +264,7 @@ a
   margin-top: 5%;
   background-color: #EDEDED;
   color: #000000;
+  text-align: center;
 }
 .contactMe h2
 {
@@ -304,6 +303,12 @@ a
     color: white;
   } 
 
+  .portrait
+  {
+    width: 20vw;
+    height: 20vw;
+  }
+
   .cards 
   { 
     grid-template-columns: 1fr 1fr;
@@ -341,6 +346,12 @@ a
     margin-top: 8%;
     color: white;
   } 
+
+  .portrait
+  {
+    width: 15vw;
+    height: 15vw;
+  }
 
   /********** ABOUT ME STYLING **********/
   .aboutMe
