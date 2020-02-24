@@ -4,8 +4,7 @@
 <head>
 	<title>Jacob Makarsky</title>
 	<link href="resources/css/style.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/awy8vih.css">
 
 	<!-- Font awesome -->
 	<script src="https://kit.fontawesome.com/99de799209.js" crossorigin="anonymous"></script>
@@ -20,163 +19,193 @@
 </head>
 <body>
 		<!--HERO IMAGE SECTION-->
-		<section class="hero">
-			<div class="hero-inner">
-				<h3>Entrepreneur, Software Developer & Designer - PSU 2020</h3>
-				<h1>Jacob Makarsky</h1>
+		<section class="header">
+			<div class = "row">
+				<div class="column">
+					<h2>Welcome To The World Of</h2>
+					<h1>Jacob Makarsky</h1>
 
-				<!-- js function to handle fading/changing text-->
-				<h2 id="helloText"></h2>
+					<!-- js function to handle fading/changing text-->
+					<h2 id="helloText"></h2>
 
-				<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em"></i></a>
-				<a href="#" onClick="window.open('https://github.com/jacobmakarsky', '_blank')"><i class="fab fa-github" style = "font-size: 1.8em"></i></a>
+					<h3>PSU 2020 | Information Science & Technology</h3>
+				</div>
+			<div>
+			<div class="row">
+				<div class="header-columns">
+					<div class="column-left">
+						<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em"></i></a>
+						<a href="#" onClick="window.open('https://github.com/jacobmakarsky', '_blank')"><i class="fab fa-github" style = "font-size: 1.8em"></i></a>
+					</div>
+					<div class="column-center">
+						<div class = "portrait">
+							<img src="./resources/images/me.jp2">
+						</div>
+					</div>
+					<div class="column-right">
+						<h3><a href = "mailto:jacobmakarsky@gmail.com">Email Me</a></h3>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<main>
-			<!--TAB SECTION UNDER HERO IMAGE-->
-			<div class="wrapper">
-			  <nav class="tabs">
-			    <div class="selector"></div>
-				    <a href="#aboutMeAnchor"><i class="fas fa-user-tie"></i>About Me</a>
-				    <a href="#experienceAnchor"><i class="fas fa-laptop-code"></i>Experience</a>
-				    <a href="#contactMeAnchor"><i class="far fa-address-card"></i>Contact Me</a>
-			  </nav>
-			</div>
-
 		<!--ABOUT ME-->
 			<div class="row">
-				<div class="col">
-					<div class="aboutMe" id="aboutMeAnchor">
-						<h2><i class="fas fa-user-tie"></i> About Me</h2>
-						<img src = "./resources/images/jacob.jp2" alt="me">
-						<div class="aboutMeHeader1">
-							<h3>
-								I am searching for a Full-Time opportunity beginning around May 2020!
-							</h3>
-						</div>
-						<div class="aboutMeHeader2">
-							<h3>
-								Programming and leadership are passions of mine, whether it’s learning a completely new language or working with a team to see ideas become results. Using my imagination in my programming and succeeding with others keeps me motivated, and the challenge of constantly needing to overcome obstacles when attempting to achieve the end goal makes me love doing it all.
-							</h3>
-						</div>
-						<div class="line"></div>
-						<div class="buttons">
-							<button class="button" onclick = "window.open('mailto:jacobmakarsky@gmail.com','_blank')">Contact Me</button>
-							<button class="button" onclick = "window.open('https://drive.google.com/open?id=1xCyzUEKQwc1szRtpvuqmWXRERV_hak0F','_blank')">Resume</button>
-						</div>
+				<div class="column">
+					<div class="aboutMe">
+						<h2>Who Am I</h2>
+						<p>I am searching for a Full-Time opportunity beginning around May 2020!</p>
+						<p>I love programming and have been trying to keep up with emerging technologies. I'm hoping to start my career using ways to integrate AI and Blockchain together, but for now I'm finishing up my final semester and focusing on graduating. I've been playing with React Native as of late and have enjoyed making several apps for iOS previously. I'd love to relax and use my imagination to make video games someday (relax as in not do all of the development), be able to make the music, storyline, characters etc. and direct the creation of my own world. For now, I'm having fun with app and website development... also trying to graduate with a profitable business in some passion of mine so I don't have to work for anyone :) Stay tuned...</p>
 					</div>
 				</div>
 			</div>
 
-		<!--EXPERIENCE-->
 			<div class="experience" id="experienceAnchor">
-				<h2><i class="fas fa-laptop-code"></i> Experience</h2>
+				<h2><i class="fas fa-laptop-code"></i>Job Experience</h2>
 			</div>
+
 			<div class="cards">
 				<div class="card">
 					<div class="container">
-						<img src="./resources/images/aruslabs.jp2" alt="me">
-					</div>
-					<div class="container">
 						<h4>Sept 2019 - Present</h4>
-						<h3>Software Engineer - Arus Labs LLC | Pittsburgh, PA</h3>
-						<p>Design & Develop iOS applications using Swift, Xcode and Adobe XD</p>
-						<button class="button" onclick = "window.open('https://www.linkedin.com/company/arus-labs?trk=public_profile_topcard_current_company','_blank')">See More</button>
+						<h2>Software Engineer</h2>
+						<h3><a href = "https://www.linkedin.com/company/arus-labs?trk=public_profile_topcard_current_company">Arus Labs LLC</a></h3>
+						<h3>Pittsburgh, PA</h3>
+						<p>Design & Develop iOS applications using Swift, Xcode and Adobe XD on an as-needed basis</p>
+					</div>
+					<div class="container">
+						<img src="./resources/images/aruslabs.jp2" alt="me">
+						<h4><a href = "https://www.linkedin.com/company/arus-labs?trk=public_profile_topcard_current_company">See More</a></h4>
 					</div>
 				</div>
+
 				<div class="card">
-					<div class="container">
-						<img src="./resources/images/innoblue.jp2" alt="me">
-					</div>
-					<div class="container">
-						<h4>Apr 2019 - Present</h4>
-						<h3>Vice President - Innoblue | State College, PA</h3>
-						<p>Help lead the organization's direction, events, influence and connections.</p>
-						<button class="button" onclick = "window.open('http://www.innoblue.org','_blank')">See More</button>
-					</div>
-				</div>
-				<div class="card">
-					<div class="container">
-						<img src="./resources/images/workshop1.jp2" alt="me">
-					</div>
-					<div class="container">
-						<h4>Nov 2019</h4>
-						<h3>Speaker - HackPSU | State College, PA</h3>
-						<p>Hosted a workshop called "Introduction to Blockchain Development" with around 30+ attendees. Spoke about enough basics of blockchain for one to begin development, and then gave a basic tutorial on coding an Ethereum smart contract using Remix IDE.</p>
-						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1XOUUYmi6xkU3t2ubHO7PCBFS52xDuHx_','_blank')">See More</button>
-					</div>
-				</div>
-				<div class="card">
-					<div class="container">
-						<img src="./resources/images/nittanyai.jp2" alt="me">
-					</div>
-					<div class="container">
-						<h4>Nov 2019</h4>
-						<h3>Nittany AI Challenge 3rd Place Winner - HackPSU | State College, PA</h3>
-						<p>Won on a team by myself. 26 teams of up to 5 people each participated. Developed a Java application that scraped social media photos, used Google Cloud Vision AI to scan the photos, and returned JSON data back to the application. (https://devpost.com/software/disaster-relief-recovery-application-drra)</p>
-						<button class="button" onclick = "window.open('https://devpost.com/software/disaster-relief-recovery-application-drra','_blank')">See More</button>
-					</div>
-				</div>
-				<div class="card">
-					<div class="container">
-						<img src="./resources/images/forbes.jp2" alt="me">
-					</div>
-					<div class="container">
-						<h4>Oct 2019</h4>
-						<h3>Forbes Under 30 Scholar & Farrell Center Scholar | Detroit, Michigan</h3>
-						<p>Recieved a scholarship from Forbes to attend the Forbes Under 30 Summit in Detroit and a scholarship from the Farrell Center for Corporate Innovation and Entrepreneurship at Penn State.</p>
-						<button class="button" onclick = "window.open('https://live.forbes.com/under30','_blank')">See More</button>
-					</div>
-				</div>
-				<div class="card">
-					<div class="container">
-						<img src="./resources/images/loopring.jp2" alt="me">
-					</div>
 					<div class="container">
 						<h4>May 2019 - Jul 2019</h4>
-						<h3>Blockchain Software Engineering Intern - Loopring | Shanghai, China</h3>
-						<p>Created a smart contract for coin swapping between the NEO blockchain (LRN) and the TRON blockchain (LRT) on an intern team of 2 using Solidity & Javascript, creating startup using blockchain technology and Loopring protocol, design some event posters and social media images</p>
-						<button class="button" onclick = "window.open('https://www.loopring.org','_blank')">See More</button>
+						<h2>Blockchain Software Engineering Intern</h2>
+						<h3><a href = "https://www.loopring.org">Loopring</a></h3>
+						<h3>Shanghai, China</h3>
+						<p>Created a smart contract for coin swapping between the NEO blockchain (LRN) and the TRON blockchain (LRT) on an intern team of 2 using Solidity & Javascript, creating startup using blockchain technology and Loopring protocol, design some event posters and social media images. 我爱上海</p>
+					</div>
+					<div class="container">
+						<img src="./resources/images/loopring.jp2" alt="me">
+						<h4><a href = "https://www.loopring.org">See More</a></h4>
 					</div>
 				</div>
+
 				<div class="card">
-					<div class="container">
-						<img src="./resources/images/workshop2.jp2" alt="me">
-					</div>
-					<div class="container">
-						<h4>Mar 2019</h4>
-						<h3>Speaker - HackPSU | State College, PA</h3>
-						<p>Hosted a workshop called "Introduction to iOS App Development" with around 50+ attendees. Showed a quick tutorial on moving assets from Adobe XD to Xcode, and then went through basic steps to make an iOS application with multiple pages and scrolling functionality.</p>
-						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1J5C80MSOqgXxqCgsBmMd6B31x8orahGj','_blank')">See More</button>
-					</div>
-				</div>
-				<div class="card">
-					<div class="container">
-						<img src="./resources/images/arbys.jp2" alt="me">
-					</div>
-					<div class="container">
-						<h4>Sep 2014 - May 2017</h4>
-						<h3>Team Member - Sheetz, Arby's, Pizza Hut | Irwin, PA</h3>
-						<p>Worked at several fast food places and learned how to pretend everything is okay.</p>
-					</div>
-				</div>
-				<div class="card">
-					<div class="container">
-						<img src="./resources/images/ctelearning.jp2" alt="me">
-					</div>
 					<div class="container">
 						<h4>Mar 2016 - May 2016</h4>
-						<h3>App Designer - CTe Learning Inc. | Greensburg, PA</h3>
+						<h2>App Designer</h2>
+						<h3><a href = "https://www.ctelearning.com">CTe Learning, Inc</a></h3>
+						<h3>Greensburg, PA</h3>
 						<p>I was employed by Cte Learning Incorporated; it was a paid internship where I designed an application for Big Time Grain Company. I regularly pitched the project status of the application through video chat, received feedback and made changes.</p>
-						<button class="button" onclick = "window.open('https://www.ctelearning.com/pennsylvania-high-school-business-student-gets-paid-internship-coding-and-mobile-app-design-course/','_blank')">See More</button>
+					</div>
+					<div class="container">
+						<img src="./resources/images/ctelearning.jp2" alt="me">
+						<h4><a href = "https://www.ctelearning.com/pennsylvania-high-school-business-student-gets-paid-internship-coding-and-mobile-app-design-course/">See More</a></h4>
 					</div>
 				</div>
+
+				<div class="card">
+					<div class="container">
+						<h4>Sep 2014 - May 2017</h4>
+						<h2>Team Member</h2>
+						<h3>Sheetz, Arby's, Pizza Hut, Dobbins</h3>
+						<h3>Pennsylvania</h3>
+						<p>Worked at several fast food places and learned how to pretend everything is okay.</p>
+					</div>
+					<div class="container">
+						<img src="./resources/images/arbys.jp2" alt="me">
+						<h4><a href = "https://www.arbys.com">See More...</a></h4>
+					</div>
+				</div>
+
+			</div>
+
+		<!--EXPERIENCE-->
+			<div class="funStuff" id="funStuff">
+				<h2><i class="fas fa-laptop-code"></i>Fun Stuff I've Done</h2>
+			</div>
+
+			<div class="cards">
+
+				<div class="card">
+					<div class="container">
+						<h4>Apr 2019 - Present</h4>
+						<h2>Vice President</h2>
+						<h3><a href = "http://www.innoblue.org">Innoblue</a></h3>
+						<h3>State College, PA</h3>
+						<p>Help lead the organization's direction, events, influence and connections.</p>
+					</div>
+					<div class="container">
+						<img src="./resources/images/innoblue.jp2" alt="me">
+						<h4><a href = "http://www.innoblue.org">See More</a></h4>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="container">
+						<h4>Nov 2019</h4>
+						<h2>Speaker</h2>
+						<h3><a href = "http://www.hackpsu.org">HackPSU</a></h3>
+						<h3>State College, PA</h3>
+						<p>Hosted a workshop called "Introduction to Blockchain Development" with around 30+ attendees. Spoke about enough basics of blockchain for one to begin development, and then gave a basic tutorial on coding an Ethereum smart contract using Remix IDE.</p>
+					</div>
+					<div class="container">
+						<img src="./resources/images/workshop1.jp2" alt="me">
+						<h4><a href = "https://drive.google.com/open?id=1XOUUYmi6xkU3t2ubHO7PCBFS52xDuHx_">See More</a></h4>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="container">
+						<h4>Nov 2019</h4>
+						<h2>Nittany AI Challenge 3rd Place Winner</h2>
+						<h3><a href = "http://www.hackpsu.org">HackPSU</a></h3>
+						<h3>State College, PA</h3>
+						<p>Won on a team by myself. 26 teams of up to 5 people each participated. Developed a Java application that scraped social media photos, used Google Cloud Vision AI to scan the photos, and returned JSON data back to the application.</p>
+					</div>
+					<div class="container">
+						<img src="./resources/images/nittanyai.jp2" alt="me">
+						<h4><a href = "https://devpost.com/software/disaster-relief-recovery-application-drra">See More</a></h4>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="container">
+						<h4>Oct 2019</h4>
+						<h2>Forbes Under 30 Scholar & Farrell Center Scholar</h2>
+						<h3><a href = "http://www.forbes.com">Forbes</a></h3>
+						<h3>Detroit, Michigan</h3>
+						<p>Recieved a scholarship from Forbes to attend the Forbes Under 30 Summit in Detroit and a scholarship from the Farrell Center for Corporate Innovation and Entrepreneurship at Penn State.</p>
+					</div>
+					<div class="container">
+						<img src="./resources/images/forbes.jp2" alt="me">
+						<h4><a href = "https://live.forbes.com/under30">See More</a></h4>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="container">
+						<h4>Mar 2019</h4>
+						<h3>Speaker</h3>
+						<h3><a href = "http://www.hackpsu.org">HackPSU</a></h3>
+						<h3>State College, PA</h3>
+						<p>Hosted a workshop called "Introduction to iOS App Development" with around 50+ attendees. Showed a quick tutorial on moving assets from Adobe XD to Xcode, and then went through basic steps to make an iOS application with multiple pages and scrolling functionality.</p>
+					</div>
+					<div class="container">
+						<img src="./resources/images/workshop2.jp2" alt="me">
+						<h4><a href = "https://drive.google.com/open?id=1J5C80MSOqgXxqCgsBmMd6B31x8orahGj">See More</a></h4>
+					</div>
+				</div>
+
 			</div>
 
 			<!-- Course Work -->
 			<div class="experience" id="academicAnchor">
-				<h2><i class="fas fa-laptop-code"></i> Academic Coursework</h2>
+				<h2><i class="fas fa-laptop-code"></i>Academic Coursework</h2>
 			</div>
 			<div class="cards">
 				<div class="card">
@@ -186,7 +215,7 @@
 						<h4>Nov 2019</h4>
 						<h3>Mock White Paper - ENGL 202D</h3>
 						<p>Created a white paper for a mock blockchain company called "D-Chain" on a team of 3. We attempted to educate on the uses of blockchain technology in medical data storage, how it is more effective than current methods and its security. We also attempted to drive the reader to use and buy our software.</p>
-						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1xVdbuUSZvj9yg6cIdsSal6G_xDuwVDec','_blank')">See More</button>
+						<h4><a href = "https://drive.google.com/open?id=1xVdbuUSZvj9yg6cIdsSal6G_xDuwVDec">See More</a></h4>
 					</div>
 				</div>
 				<div class="card">
@@ -196,7 +225,7 @@
 						<h4>Oct 2019</h4>
 						<h3>Pet Store - IST 261</h3>
 						<p>A small Java project on "Implementing Polymorphism Using Inheritance and/or Interfaces" using Netbeans. The user is able to view some items in a mock pet store that uses an MVC design method.</p>
-						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1yqkm8vq0wr4KFO0FBQnTA56_Pmpk1Oaf','_blank')">See More</button>
+						<h4><a href = "https://drive.google.com/open?id=1yqkm8vq0wr4KFO0FBQnTA56_Pmpk1Oaf">See More</a></h4>
 					</div>
 				</div>
 				<div class="card">
@@ -206,7 +235,7 @@
 						<h4>Feb 2019</h4>
 						<h3>Searching a HashMap - IST 242</h3>
 						<p>A small Java project on "Searching a HashMap" using Netbeans.</p>
-						<button class="button" onclick = "window.open('			https://drive.google.com/open?id=18xZp0i6GHdaaOyL523y8cGuCAC9lUSlU','_blank')">See More</button>
+						<h4><a href = "https://drive.google.com/open?id=18xZp0i6GHdaaOyL523y8cGuCAC9lUSlU">See More</a></h4>
 					</div>
 				</div>
 			</div>
@@ -216,11 +245,15 @@
 				<div class="col">
 					<div class="contactMe" id="contactMeAnchor">
 						<h2><i class="far fa-address-card"></i> Contact Me</h2>
-						<button class="button" onclick = "window.open('mailto:jacobmakarsky@gmail.com','_blank')">Email Me</button>
-						<button class="button" onclick = "window.open('https://drive.google.com/open?id=1xCyzUEKQwc1szRtpvuqmWXRERV_hak0F','_blank')">Resume</button>
+
+						<h4><a href = "mailto:jacobmakarsky@gmail.com">Email Me</a></h4>
+						<h4><a href = "https://drive.google.com/open?id=1xCyzUEKQwc1szRtpvuqmWXRERV_hak0F">Public Resume</a></h4>
+
 						<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em";></i></a>
 						<a href="#" onClick="window.open('https://github.com/jacobmakarsky', '_blank')"><i class="fab fa-github" style = "font-size: 1.8em"></i></a>
+
 						<h3>jacobmakarsky@gmail.com</h3>
+
 					</div>
 				</div>
 			</div>
