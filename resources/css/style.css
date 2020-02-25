@@ -3,43 +3,22 @@
 
 html, html * 
 {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-  background-color: #000000;
-  color: #FFFFFF;
-
   font-family: ocr-a-std,monospace;
   font-weight: 400;
   font-style: normal;
 }
-body
-{
-  margin: 0;
-}
-
 p
 {
   line-height: 1.5;
 }
-h1,h2,h3,p
-{
-  text-align: center;
-}
 a
 {
   color: #007FFF;
+  text-decoration: underline;
 }
-
-/******* COLUMN AND ROW STYLING *******/
-.row:before, .row:after
+body
 {
-  content: "";
-  display: table;
-}
-.row:after
-{
-  clear: both;
+  background-color: #000000;
 }
 
 /************* HEADER STYLING *************/
@@ -47,76 +26,17 @@ a
 .header
 {
   margin-top: 5%;
+  color: #FFFFFF;
 }
 
-.header h1 
+.header .fab
 {
-  /* Text styles */
-  font-size: 3em;
-    
-  /* Margins */
-  margin-top: 0;
-}
-
-.header h2
-{
-	margin-bottom: 4%;
-	margin-top: 4%;
-}
-
-.header h3
-{
-	margin-bottom: 3%;
-}
-
-.header-columns
-{
-  margin-top: 5%;
+  color: #FFFFFF;
 }
 
 .fab
 {
-	margin-top: 20%;
-	color: white;
-}
-
-.portrait
-{
-  position: relative;
-  width: 30vw;
-  height: 30vw;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.portrait img
-{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.column-left
-{
-  float: left;
-  width: 33.333%;
-  display: grid;
-  text-align: center;
-}
-
-.column-center
-{
-  display: inline-block;
-  width: 33.333%;
-}
-
-.column-right
-{
-  float: right;
-  width: 33.333%;
-  padding: 70px 0;
-  text-align: center;
+	color: #000000;
 }
 
 /************* ABOUT ME SECTION *************/
@@ -124,9 +44,10 @@ a
 {
   margin-top: 5%;
   padding: 5%;
+  color: #FFFFFF;
 }
 
-.aboutMe h2
+.aboutMe h3
 {
   text-decoration: underline;
   margin-bottom: 3%;
@@ -136,277 +57,88 @@ a
   margin-top: 3%;
 }
 
-/************* FUN STUFF SECTION *************/
-.funStuff
+/************* SECTION TITLES *************/
+.sectionTitle
 {
   text-align: center;
-  margin-top: 5%;
+  margin: 3%;
 }
 
-.funStuff h2
-{
-  text-decoration: underline;
-  margin-bottom: 3%;
-}
-
-.funStuff i
+.sectionTitle i
 {
   margin-right: 5%;
 }
 
-/************* EXPERIENCE SECTION *************/
-.experience
+.sectionTitle h3
 {
-  text-align: center;
-  margin-top: 5%;
-}
-
-.experience i
-{
-  margin-right: 5%;
-}
-
-.experience h2
-{
+  color: #FFFFFF;
   text-decoration: underline;
-}
-
-.cards 
-{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 95%;
-}
-.card
-{
-  flex: 1 1 300px;
-  margin: 5%;
-  background-color: #EDEDED;
-}
-.container
-{
-  background-color: #EDEDED;
-  text-align: center;
-  margin: 3%;
-}
-.card .container h3
-{
-  margin-top: 3%;
-  background-color: #EDEDED;
-  color: #000000;
-}
-.card .container h2
-{
-  margin-top: 3%;
-  background-color: #EDEDED;
-  color: #000000;
-}
-.card .container h4
-{
-  margin-top: 3%;
-  background-color: #EDEDED;
-  color: #000000;
-}
-.card .container p
-{
-  margin-top: 3%;
-  background-color: #EDEDED;
-  color: #000000;
-}
-.container img
-{
-  width: 100%;
-  height: 100%;
-  max-width: 70%;
-  max-height: 70%;
-  margin: 3%;
-}
-.container a
-{
-  background-color: #EDEDED;
-}
-
-/************* CONTACT ME SECTION *************/
-.contactMe
-{
-  padding: 30px 20px 60px;
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 5%;
-  background-color: #EDEDED;
-  display: block;
-}
-.contactMe .button
-{
-  float: none;
-  margin-top: 5%;
-}
-.contactMe .fab
-{
-  display: block;
-  margin: 0 auto;
-  color: #000000;
-  margin-top: 5%;
-}
-.contactMe a /*issue with underline not going away on linked button corrected here*/
-{
-  text-decoration: none;
-}
-.contactMe i
-{
-  background-color: #EDEDED;
-  color: #000000;
-}
-.contactMe h3
-{
-  margin-top: 5%;
-  background-color: #EDEDED;
-  color: #000000;
-}
-.contactMe h2
-{
-  background-color: #EDEDED;
-  color: #000000;
-}
-.contactMe h4
-{
-  background-color: #EDEDED;
-  color: #000000;
-  margin-top: 3%;
-  text-decoration: underline;
-}
-.contactMe a
-{
-  background-color: #EDEDED;
 }
 
 /************* FOOTER *************/
 .footer 
 {
-   left: 0;
-   bottom: 0;
    width: 100%;
-   color: #000000;
-   text-align: center;
+   color: #FFFFFF;
    margin-top: 5%;
 }
 
 /************* TABLET VIEW *************/
 @media (min-width: 768px)
 {
-  .fab
+  .aboutMe
   {
-    margin-top: 10%;
-    color: white;
-  } 
-
-  .portrait
-  {
-    width: 20vw;
-    height: 20vw;
+    margin-top: 0%;
   }
 
-  .cards 
-  { 
-    grid-template-columns: 1fr 1fr;
-  }
-  .card
+  .aboutMe h3
   {
-    max-width: 50vw;
+    margin-bottom: 0%;
   }
+
+  .experience
+  {
+    margin-top: 0%;
+  }
+
+  .contactMe
+  {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
 }
 
 /************* DESKTOP VIEW *************/
 @media (min-width: 1024px)
 {
-  /********** HEADER STYLING **********/
   .header
   {
-    margin-top: 0%;
-  }
-  .header h2
-  {
-    margin-bottom: 2%;
-  }
-  .header h2
-  {
     margin-top: 2%;
   }
-  .header-columns
-  {
-    margin-top: 0%;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .fab
-  {
-    margin-top: 8%;
-    color: white;
-  } 
 
-  .portrait
+  .container-fluid
   {
-    width: 15vw;
-    height: 15vw;
+    margin-top: 5%;
   }
 
-  /********** ABOUT ME STYLING **********/
   .aboutMe
   {
-    margin-top: -3%;
     padding-bottom: 0%;
-    padding-left: 10%;
-    padding-right: 10%;
   }
 
-  /********** EXPERIENCE STYLING **********/
-  .experience i
+  .aboutMe p
   {
-    margin-right: 2%;
-  }
-  .cards 
-  { 
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .card
-  {
-    max-width: 25vw;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
-  /********** FUN STUFF STYLING **********/
-  .funStuff i
+  .card-columns
   {
-    margin-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   
-
-  /****** CONTACT ME SECTION ******/
-  .contactMe
-  {
-    width: 50%;
-    text-align: center;
-  }
-  .contactMe h2, h3
-  {
-    margin-left: 0;
-  }
-  .contactMe .button
-  {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 3%;
-  }
-  .contactMe .fa
-  {
-    margin-top: 2%;
-    margin-bottom: 0;
-  }
 }
 
 

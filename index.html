@@ -1,266 +1,292 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap & javascript imports -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="resources/javascript/script.js"></script>
+
 	<title>Jacob Makarsky</title>
 	<link href="resources/css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/awy8vih.css">
 
-	<!-- Font awesome -->
+	<!-- Fonts -->
 	<script src="https://kit.fontawesome.com/99de799209.js" crossorigin="anonymous"></script>
-
-	<!-- Javascript imports-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="./resources/javascript/script.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/awy8vih.css">
 
 	<!-- google console verification meta tag-->
 	<meta name="google-site-verification" content="RG-bRIVvqdaeUVeTAueNNP_TBUoNxm1YSH3QhoBvHbk" />
-	
 </head>
 <body>
+
 		<!--HERO IMAGE SECTION-->
-		<section class="header">
+		<section class="header text-center">
+
 			<div class = "row">
-				<div class="column">
+				<div class="col-md-12">
 					<h2>Welcome To The World Of</h2>
 					<h1>Jacob Makarsky</h1>
 
-					<!-- js function to handle fading/changing text-->
 					<h2 id="helloText"></h2>
 
 					<h3>PSU 2020 | Information Science & Technology</h3>
 				</div>
 			<div>
-			<div class="row">
-				<div class="header-columns">
-					<div class="column-left">
-						<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em"></i></a>
-						<a href="#" onClick="window.open('https://github.com/jacobmakarsky', '_blank')"><i class="fab fa-github" style = "font-size: 1.8em"></i></a>
-					</div>
-					<div class="column-center">
-						<div class = "portrait">
-							<img src="./resources/images/me.jpeg">
+
+			<div class="container-fluid">
+				<div class="row mx-auto align-items-center">
+						<div class="col-sm col-4">
+							<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em"></i></a>
+							<a href="#" onClick="window.open('https://github.com/jacobmakarsky', '_blank')"><i class="fab fa-github" style = "font-size: 1.8em"></i></a>
+						</div>
+
+						<div class="col-sm col-4">
+							<img src="./resources/images/me.jpeg" class="img-fluid img-thumbnail" alt="selfie">
+						</div>
+
+						<div class="col-sm col-4">
+							<h3><a href = "mailto:jacobmakarsky@gmail.com">Email Me</a></h3>
 						</div>
 					</div>
-					<div class="column-right">
-						<h3><a href = "mailto:jacobmakarsky@gmail.com">Email Me</a></h3>
-					</div>
-				</div>
 			</div>
 		</section>
 
 		<main>
+
 		<!--ABOUT ME-->
 			<div class="row">
 				<div class="column">
-					<div class="aboutMe">
-						<h2>Who Am I</h2>
+					<div class="aboutMe text-center">
+						<h3>Who Am I</h3>
 						<p>I am searching for a Full-Time opportunity beginning around May 2020!</p>
 						<p>I love programming and have been trying to keep up with emerging technologies. I'm hoping to start my career using ways to integrate AI and Blockchain together, but for now I'm finishing up my final semester and focusing on graduating. I've been playing with React Native as of late and have enjoyed making several apps for iOS previously. I'd love to relax and use my imagination to make video games someday (relax as in not do all of the development), be able to make the music, storyline, characters etc. and direct the creation of my own world. For now, I'm having fun with app and website development... also trying to graduate with a profitable business in some passion of mine so I don't have to work for anyone :) Stay tuned...</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="experience" id="experienceAnchor">
-				<h2><i class="fas fa-laptop-code"></i>Job Experience</h2>
+			<div class="sectionTitle" id="experienceAnchor">
+				<h3><i class="fas fa-laptop-code"></i>Job Experience</h3>
 			</div>
 
-			<div class="cards">
-				<div class="card">
-					<div class="container">
-						<h4>Sept 2019 - Present</h4>
-						<h2>Software Engineer</h2>
-						<h3><a href = "https://www.linkedin.com/company/arus-labs?trk=public_profile_topcard_current_company">Arus Labs LLC</a></h3>
-						<h3>Pittsburgh, PA</h3>
-						<p>Design & Develop iOS applications using Swift, Xcode and Adobe XD on an as-needed basis</p>
-					</div>
-					<div class="container">
-						<img src="./resources/images/aruslabs.JPG" alt="me">
-						<h4><a href = "https://www.linkedin.com/company/arus-labs?trk=public_profile_topcard_current_company">See More</a></h4>
+			<div class="card-columns">
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">Sept 2019 - Present</h4>
+						<h3 class = "card-title">Software Engineer</h3>
+						<h3><a href = "https://www.linkedin.com/company/arus-labs?trk=public_profile_topcard_current_company" class="card-link">Arus Labs LLC</a></h3>
+						<h4 class="card-subtitle m-3">Pittsburgh, PA</h4>
+						<p class="card-text">Design & Develop iOS applications using Swift, Xcode and Adobe XD on an as-needed basis</p>
+						<img src="./resources/images/aruslabs.JPG" alt="me" class="card-img-bottom">
+
+						<div class="card-footer">
+							<h4><a href = "https://www.linkedin.com/company/arus-labs?trk=public_profile_topcard_current_company" class = "card-link">See More</a></h4>
+					    </div>
 					</div>
 				</div>
 
-				<div class="card">
-					<div class="container">
-						<h4>May 2019 - Jul 2019</h4>
-						<h2>Blockchain Software Engineering Intern</h2>
-						<h3><a href = "https://www.loopring.org">Loopring</a></h3>
-						<h3>Shanghai, China</h3>
-						<p>Created a smart contract for coin swapping between the NEO blockchain (LRN) and the TRON blockchain (LRT) on an intern team of 2 using Solidity & Javascript, creating startup using blockchain technology and Loopring protocol, design some event posters and social media images. 我爱上海</p>
-					</div>
-					<div class="container">
-						<img src="./resources/images/loopring.JPG" alt="me">
-						<h4><a href = "https://www.loopring.org">See More</a></h4>
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">May 2019 - Jul 2019</h4>
+						<h3 class = "card-title">Blockchain Software Engineering Intern</h3>
+						<h3><a href = "https://www.loopring.org" class="card-link">Loopring</a></h3>
+						<h4 class="card-subtitle m-3">Shanghai, China</h4>
+						<p class="card-text">Created a smart contract for coin swapping between the NEO blockchain (LRN) and the TRON blockchain (LRT) on an intern team of 2 using Solidity & Javascript, creating startup using blockchain technology and Loopring protocol, design some event posters and social media images. 我爱上海</p>
+						<img src="./resources/images/loopring.JPG" alt="me" class="card-img-bottom">
+
+						<div class="card-footer">
+							<h4><a href = "https://www.loopring.org" class = "card-link">See More</a></h4>
+					    </div>
 					</div>
 				</div>
 
-				<div class="card">
-					<div class="container">
-						<h4>Mar 2016 - May 2016</h4>
-						<h2>App Designer</h2>
-						<h3><a href = "https://www.ctelearning.com">CTe Learning, Inc</a></h3>
-						<h3>Greensburg, PA</h3>
-						<p>I was employed by Cte Learning Incorporated; it was a paid internship where I designed an application for Big Time Grain Company. I regularly pitched the project status of the application through video chat, received feedback and made changes.</p>
-					</div>
-					<div class="container">
-						<img src="./resources/images/ctelearning.JPG" alt="me">
-						<h4><a href = "https://www.ctelearning.com/pennsylvania-high-school-business-student-gets-paid-internship-coding-and-mobile-app-design-course/">See More</a></h4>
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">Mar 2016 - May 2016</h4>
+						<h3 class = "card-title">App Designer</h3>
+						<h3><a href = "https://www.ctelearning.com" class="card-link">CTe Learning, Inc</a></h3>
+						<h4 class="card-subtitle m-3">Greensburg, PA</h4>
+						<p class="card-text">I was employed by Cte Learning Incorporated; it was a paid internship where I designed an application for Big Time Grain Company. I regularly pitched the project status of the application through video chat, received feedback and made changes.</p>
+
+						<img src="./resources/images/ctelearning.JPG" alt="me" class="card-img-bottom">
+
+						<div class="card-footer">
+							<h4><a href = "https://www.ctelearning.com/pennsylvania-high-school-business-student-gets-paid-internship-coding-and-mobile-app-design-course/" class = "card-link">See More</a></h4>
+						</div>
 					</div>
 				</div>
 
-				<div class="card">
-					<div class="container">
-						<h4>Sep 2014 - May 2017</h4>
-						<h2>Team Member</h2>
-						<h3>Sheetz, Arby's, Pizza Hut, Dobbins</h3>
-						<h3>Pennsylvania</h3>
-						<p>Worked at several fast food places and learned how to pretend everything is okay.</p>
-					</div>
-					<div class="container">
-						<img src="./resources/images/arbys.jpg" alt="me">
-						<h4><a href = "https://www.arbys.com">See More...</a></h4>
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">Sep 2014 - May 2017</h4>
+						<h3 class = "card-title">Team Member</h3>
+						<h4 class="card-subtitle m-3">Sheetz, Arby's, Pizza Hut, Dobbins</h3>
+						<h4 class="card-subtitle m-3">Pennsylvania</h4>
+						<p class="card-text">Worked at several fast food places and learned how to pretend everything is okay.</p>
+
+						<img src="./resources/images/arbys.jpg" alt="me" class="card-img-bottom">
+
+						<div class="card-footer">	
+							<h4><a href = "https://www.arbys.com" class = "card-link">See More...</a></h4>
+						</div>
 					</div>
 				</div>
-
 			</div>
 
 		<!--EXPERIENCE-->
-			<div class="funStuff" id="funStuff">
-				<h2><i class="fas fa-laptop-code"></i>Fun Stuff I've Done</h2>
+			<div class="sectionTitle text-center" id="funStuff">
+				<h3><i class="fas fa-laptop-code"></i>Fun Stuff I've Done</h3>
 			</div>
 
-			<div class="cards">
+			<div class="card-columns">
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">Apr 2019 - Present</h4>
+						<h3 class = "card-title">Vice President</h3>
+						<h3><a href = "http://www.innoblue.org" class="card-link">Innoblue</a></h3>
+						<h4 class="card-subtitle m-3">State College, PA</h4>
+						<p class="card-text">Help lead the organization's direction, events, influence and connections.</p>
+						<img src="./resources/images/innoblue.JPG" alt="me" class="card-img-bottom">
 
-				<div class="card">
-					<div class="container">
-						<h4>Apr 2019 - Present</h4>
-						<h2>Vice President</h2>
-						<h3><a href = "http://www.innoblue.org">Innoblue</a></h3>
-						<h3>State College, PA</h3>
-						<p>Help lead the organization's direction, events, influence and connections.</p>
-					</div>
-					<div class="container">
-						<img src="./resources/images/innoblue.JPG" alt="me">
-						<h4><a href = "http://www.innoblue.org">See More</a></h4>
+						<div class="card-footer">	
+							<h4><a href = "http://www.innoblue.org" class="card-link">See More</a></h4>
+						</div>
 					</div>
 				</div>
 
-				<div class="card">
-					<div class="container">
-						<h4>Nov 2019</h4>
-						<h2>Speaker</h2>
-						<h3><a href = "http://www.hackpsu.org">HackPSU</a></h3>
-						<h3>State College, PA</h3>
-						<p>Hosted a workshop called "Introduction to Blockchain Development" with around 30+ attendees. Spoke about enough basics of blockchain for one to begin development, and then gave a basic tutorial on coding an Ethereum smart contract using Remix IDE.</p>
-					</div>
-					<div class="container">
-						<img src="./resources/images/workshop1.JPG" alt="me">
-						<h4><a href = "https://drive.google.com/open?id=1XOUUYmi6xkU3t2ubHO7PCBFS52xDuHx_">See More</a></h4>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="container">
-						<h4>Nov 2019</h4>
-						<h2>Nittany AI Challenge 3rd Place Winner</h2>
-						<h3><a href = "http://www.hackpsu.org">HackPSU</a></h3>
-						<h3>State College, PA</h3>
-						<p>Won on a team by myself. 26 teams of up to 5 people each participated. Developed a Java application that scraped social media photos, used Google Cloud Vision AI to scan the photos, and returned JSON data back to the application.</p>
-					</div>
-					<div class="container">
-						<img src="./resources/images/nittanyai.JPG" alt="me">
-						<h4><a href = "https://devpost.com/software/disaster-relief-recovery-application-drra">See More</a></h4>
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">Nov 2019</h4>
+						<h3 class = "card-title">Speaker</h3>
+						<h3 ><a href = "http://www.hackpsu.org" class="card-link">HackPSU</a></h3>
+						<h4 class="card-subtitle m-3">State College, PA</h4>
+						<p class="card-text">Hosted a workshop called "Introduction to Blockchain Development" with around 30+ attendees. Spoke about enough basics of blockchain for one to begin development, and then gave a basic tutorial on coding an Ethereum smart contract using Remix IDE.</p>
+						<img src="./resources/images/workshop1.JPG" alt="me" class="card-img-bottom">					
+						<div class="card-footer">	
+							<h4><a href = "https://drive.google.com/open?id=1XOUUYmi6xkU3t2ubHO7PCBFS52xDuHx_" class="card-link">See More</a></h4>
+						</div>
 					</div>
 				</div>
 
-				<div class="card">
-					<div class="container">
-						<h4>Oct 2019</h4>
-						<h2>Forbes Under 30 Scholar & Farrell Center Scholar</h2>
-						<h3><a href = "http://www.forbes.com">Forbes</a></h3>
-						<h3>Detroit, Michigan</h3>
-						<p>Recieved a scholarship from Forbes to attend the Forbes Under 30 Summit in Detroit and a scholarship from the Farrell Center for Corporate Innovation and Entrepreneurship at Penn State.</p>
-					</div>
-					<div class="container">
-						<img src="./resources/images/forbes.JPG" alt="me">
-						<h4><a href = "https://live.forbes.com/under30">See More</a></h4>
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">Nov 2019</h4>
+						<h3 class = "card-title">Nittany AI Challenge 3rd Place Winner</h3>
+						<h3><a href = "http://www.hackpsu.org" class="card-subtitle m-3">HackPSU</a></h3>
+						<h4 class="card-subtitle m-3">State College, PA</h4>
+						<p class="card-text">Won on a team by myself. 26 teams of up to 5 people each participated. Developed a Java application that scraped social media photos, used Google Cloud Vision AI to scan the photos, and returned JSON data back to the application.</p>
+						<img src="./resources/images/nittanyai.JPG" alt="me" class="card-img-bottom">
+
+						<div class="card-footer">
+							<h4><a href = "https://devpost.com/software/disaster-relief-recovery-application-drra" class="card-link">See More</a></h4>
+						</div>
 					</div>
 				</div>
 
-				<div class="card">
-					<div class="container">
-						<h4>Mar 2019</h4>
-						<h3>Speaker</h3>
-						<h3><a href = "http://www.hackpsu.org">HackPSU</a></h3>
-						<h3>State College, PA</h3>
-						<p>Hosted a workshop called "Introduction to iOS App Development" with around 50+ attendees. Showed a quick tutorial on moving assets from Adobe XD to Xcode, and then went through basic steps to make an iOS application with multiple pages and scrolling functionality.</p>
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">Oct 2019</h4>
+						<h3 class = "card-title">Forbes Under 30 Scholar & Farrell Center Scholar</h3>
+						<h3><a href = "http://www.forbes.com" class="card-subtitle m-3">Forbes</a></h3>
+						<h4 class="card-subtitle m-3">Detroit, Michigan</h4>
+						<p class="card-text">Recieved a scholarship from Forbes to attend the Forbes Under 30 Summit in Detroit and a scholarship from the Farrell Center for Corporate Innovation and Entrepreneurship at Penn State.</p>
+						<img src="./resources/images/forbes.JPG" alt="me" class="card-img-bottom">
+
+						<div class="card-footer">
+							<h4><a href = "https://live.forbes.com/under30" class="card-link">See More</a></h4>
+						</div>
 					</div>
-					<div class="container">
-						<img src="./resources/images/workshop2.JPG" alt="me">
-						<h4><a href = "https://drive.google.com/open?id=1J5C80MSOqgXxqCgsBmMd6B31x8orahGj">See More</a></h4>
+				</div>
+
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle mb-2 text-muted">Mar 2019</h4>
+						<h3 class = "card-title">Speaker</h3>
+						<h3><a href = "http://www.hackpsu.org" class="card-subtitle m-3">HackPSU</a></h3>
+						<h4 class="card-subtitle m-3">State College, PA</h4>
+						<p class="card-text">Hosted a workshop called "Introduction to iOS App Development" with around 50+ attendees. Showed a quick tutorial on moving assets from Adobe XD to Xcode, and then went through basic steps to make an iOS application with multiple pages and scrolling functionality.</p>
+
+						<img src="./resources/images/workshop2.JPG" alt="me" class="card-img-bottom">
+					
+						<div class="card-footer">
+							<h4><a href = "https://drive.google.com/open?id=1J5C80MSOqgXxqCgsBmMd6B31x8orahGj" class="card-link">See More</a></h4>
+						</div>
 					</div>
 				</div>
 
 			</div>
 
 			<!-- Course Work -->
-			<div class="experience" id="academicAnchor">
-				<h2><i class="fas fa-laptop-code"></i>Academic Coursework</h2>
+			<div class="sectionTitle" id="academicAnchor">
+				<h3><i class="fas fa-laptop-code"></i>Academic Coursework</h3>
 			</div>
-			<div class="cards">
-				<div class="card">
-					<div class="container">
-					</div>
-					<div class="container">
-						<h4>Nov 2019</h4>
-						<h3>Mock White Paper - ENGL 202D</h3>
-						<p>Created a white paper for a mock blockchain company called "D-Chain" on a team of 3. We attempted to educate on the uses of blockchain technology in medical data storage, how it is more effective than current methods and its security. We also attempted to drive the reader to use and buy our software.</p>
-						<h4><a href = "https://drive.google.com/open?id=1xVdbuUSZvj9yg6cIdsSal6G_xDuwVDec">See More</a></h4>
-					</div>
-				</div>
-				<div class="card">
-					<div class="container">
-					</div>
-					<div class="container">
-						<h4>Oct 2019</h4>
-						<h3>Pet Store - IST 261</h3>
-						<p>A small Java project on "Implementing Polymorphism Using Inheritance and/or Interfaces" using Netbeans. The user is able to view some items in a mock pet store that uses an MVC design method.</p>
-						<h4><a href = "https://drive.google.com/open?id=1yqkm8vq0wr4KFO0FBQnTA56_Pmpk1Oaf">See More</a></h4>
+
+			<div class="card-columns">
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle m-2 text-muted">Nov 2019</h4>
+						<h3 class = "card-title">Mock White Paper - ENGL 202D</h3>
+						<p class="card-text">Created a white paper for a mock blockchain company called "D-Chain" on a team of 3. We attempted to educate on the uses of blockchain technology in medical data storage, how it is more effective than current methods and its security. We also attempted to drive the reader to use and buy our software.</p>
+
+						<div class="card-footer">
+							<h4><a href = "https://drive.google.com/open?id=1xVdbuUSZvj9yg6cIdsSal6G_xDuwVDec" class="card-link">See More</a></h4>
+						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="container">
+
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle m-2 text-muted">Oct 2019</h4>
+						<h3 class = "card-title">Pet Store - IST 261</h3>
+						<p class="card-text">A small Java project on "Implementing Polymorphism Using Inheritance and/or Interfaces" using Netbeans. The user is able to view some items in a mock pet store that uses an MVC design method.</p>
+
+						<div class="card-footer">
+							<h4><a href = "https://drive.google.com/open?id=1yqkm8vq0wr4KFO0FBQnTA56_Pmpk1Oaf" class="card-link">See More</a></h4>
+						</div>
 					</div>
-					<div class="container">
-						<h4>Feb 2019</h4>
-						<h3>Searching a HashMap - IST 242</h3>
-						<p>A small Java project on "Searching a HashMap" using Netbeans.</p>
-						<h4><a href = "https://drive.google.com/open?id=18xZp0i6GHdaaOyL523y8cGuCAC9lUSlU">See More</a></h4>
+				</div>
+
+				<div class="card bg-light m-4 p-3 text-center">
+					<div class="card-body">
+						<h4 class="card-subtitle m-2 text-muted">Feb 2019</h4>
+						<h3 class = "card-title">Searching a HashMap - IST 242</h3>
+						<p class="card-text">A small Java project on "Searching a HashMap" using Netbeans.</p>
+
+						<div class="card-footer">
+							<h4><a href = "https://drive.google.com/open?id=18xZp0i6GHdaaOyL523y8cGuCAC9lUSlU" class="card-link">See More</a></h4>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<!--CONTACT ME-->
-			<div class="row">
-				<div class="col">
-					<div class="contactMe" id="contactMeAnchor">
-						<h2><i class="far fa-address-card"></i> Contact Me</h2>
+			<div class="contactMe">
+				<div class="card bg-light text-center m-4 p-3">
+					<div class="card-body">
+						<h3 class = "card-title"><i class="far fa-address-card"></i> Contact Me</h3>
+						<h4><a href = "mailto:jacobmakarsky@gmail.com" class="card-link">Email Me</a></h4>
+						<h4><a href = "https://drive.google.com/open?id=1xCyzUEKQwc1szRtpvuqmWXRERV_hak0F" class="card-link">Public Resume</a></h4>
 
-						<h4><a href = "mailto:jacobmakarsky@gmail.com">Email Me</a></h4>
-						<h4><a href = "https://drive.google.com/open?id=1xCyzUEKQwc1szRtpvuqmWXRERV_hak0F">Public Resume</a></h4>
+						<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em;"></i></a>
+						<a href="#" onClick="window.open('https://github.com/jacobmakarsky', '_blank')"><i class="fab fa-github" style = "font-size: 1.8em;"></i></a>
 
-						<a href="#" onClick="window.open('https://www.linkedin.com/in/jacobmakarsky/', '_blank')"><i class="fab fa-linkedin" style = "font-size: 1.8em";></i></a>
-						<a href="#" onClick="window.open('https://github.com/jacobmakarsky', '_blank')"><i class="fab fa-github" style = "font-size: 1.8em"></i></a>
-
-						<h3>jacobmakarsky@gmail.com</h3>
-
+						<div class="card-footer">
+							<h5 class="card-subtitle mb-2 text-muted">jacobmakarsky@gmail.com</h5>
+						</div>
 					</div>
-				</div>
+			</div>
 			</div>
 
 			<!--FOOTER-->
 			<div class="row">
-				<div class="col">
+				<div class="col-md-12 text-center">
 					<div class="footer">
 					  <p>Copyright © Jacob Makarsky</p>
 					</footer>
