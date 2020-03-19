@@ -1,10 +1,10 @@
 $(document).ready(function()
 {
+	fader();
+	typeWriter();
 	setTimeout(function(){
 		$("#myModal").modal('show');
 	}, 5000);
-	fader();
-	typeWriter();
 });
 
 //FADING HELLO LOOP CALLBACK FUNCTION
